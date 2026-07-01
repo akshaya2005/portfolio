@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Old English Text MT';
+  src: url('/fonts/oldenglishtextmt.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Cheltenham';
+  src: url('/fonts/cheltenham-normal-200.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@layer base {
+  body {
+    @apply bg-paper text-ink font-body;
+  }
+  /* Hairline rules à la NYT */
+  hr {
+    @apply border-rule;
+  }
+}
+
+@layer components {
+  .rule-thick {
+    @apply border-t-4 border-ink;
+  }
+  .rule-thin {
+    @apply border-t border-rule;
+  }
+  .section-label {
+    @apply font-sans text-[10px] uppercase tracking-[0.2em] text-ink/60;
+  }
+  .nav-link {
+    @apply font-sans text-sm font-medium px-4 py-2 border border-transparent
+           hover:border-rule transition-colors duration-150 rounded-sm;
+  }
+  .nav-link.active {
+    @apply bg-ink text-paper border-ink;
+  }
+}
