@@ -1,7 +1,6 @@
 import { Outlet } from 'react-router-dom'
 import Masthead from './Masthead'
 import Navbar from './Navbar'
-import MusicPlayer from './MusicPlayer'
 
 export default function Layout() {
   return (

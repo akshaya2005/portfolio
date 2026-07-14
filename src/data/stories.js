@@ -1,97 +1,150 @@
 // ─── stories.js ──────────────────────────────────────────────────────────────
-// Your "articles". Each object maps to one ArticleCard on the Newspaper page.
-// Add photos to src/assets/photos/ and import them at the top.
+// Portfolio projects organized by category.
+// Each category has an array of projects to be displayed on their respective pages.
 
-import formal from '../assets/photos/formal.jpg'
-import graduation1 from '../assets/photos/graduation1.jpg'
-import graduation_boob from '../assets/photos/graduation_boob.jpg'
-import holi_show from '../assets/photos/holi_show.jpg'
-import holi_perf from '../assets/photos/holi_perf.jpg'
-import i_scream from '../assets/photos/i_scream.jpg'
-import i_skate from '../assets/photos/i_skate.jpg'
-import philosopher from '../assets/photos/philosopher.jpg'
-
-export const stories = [
+export const systemsProjects = [
   {
     id: 1,
-    image: formal,
-    headline: 'Dear Dylan, Happy Three Year Anniversary!',
-    subheadline: 'That’s like four whole babies!',
-    body: `Oh em goodness! Can you believe we have been together for three whole years? Congrats to us! Can you also believe that we have only spent one June 13th together since we started dating? They truly hate us, but here’s to us being together next year. I feel like I am a whole different person than I was when we started dating, and I owe so much of that growth to you. I am so glad we got to grow and change and mature together- there is no one I would’ve rather done it all with.
-
-I feel like after having written a billion of these, you can almost predict what I am going to say, but it’s all still worth saying.`,
+    headline: 'Verilog Five-Stage Pipeline',
+    subheadline: 'Hardware instruction execution architecture on FPGA',
+    body: `Designed and implemented a five-stage CPU pipeline (Fetch, Decode, Execute, Memory, Writeback) in Verilog with support for instruction pipelining and hazard detection. Deployed on a simulated FPGA environment with comprehensive testing of pipeline behavior and stall mechanisms.`,
     byline: 'By Akshaya Arun',
-    date: 'June 13, 2026',
+    date: 'Portfolio',
     size: 'large',
   },
   {
     id: 2,
-    image: philosopher,
-    headline: 'Everything I Love About You',
-    subheadline: 'Experts say you\'re really hot and stuff',
-    body: `You are the most kind, loving, smart, gorgeous, handsome, sweet, thoughtful, and selfless person I know. You’re just perfect. You know how to make me laugh, you listen when I cry, you do things with me just because I love doing them, you can anticipate what I am about to say before I even say it, you bring me back when I am spiraling so far beyond my control, you make the walk from the Mark to the Connector so much more bearable, you make doing LC problems so much more fun, and you believe in me even when it is impossible for me to believe in myself. You make me a better person and you make me strive to be a better person for you. Most importantly, though, you’re bb mi. I’m so glad my fat fingers came up with the most endearing nickname for you. 
-
-I love everything about you and doing everything with you. I love the way you can turn anything hilarious, I love the little beauty mark on your face, I love your boob birthmark, I love that you remember the smallest details about everything I tell you, I love the way you pay attention to little details in movies and shows we watch and point them out to me (and I also love how much movie trivia you know).`,
+    headline: 'Cache Simulator with Coherency Protocols',
+    subheadline: 'Multi-level cache simulation and protocol implementation',
+    body: `Built a comprehensive cache simulator supporting multiple coherency protocols (MOESI, MESI, MOESIF). Developed automation scripts to systematically evaluate various cache configurations across the C/B/S taxonomy, enabling performance analysis and protocol comparison.`,
     byline: 'By Akshaya Arun',
-    date: 'June 13, 2026',
+    date: 'Portfolio',
     size: 'medium',
   },
   {
     id: 3,
-    image: holi_show,
-    headline: 'Everything I Love Doing With You',
-    subheadline: 'Did you know that doing things together is upto 10000x better?',
-    body: `I love laughing with you until my stomach hurts, I love kissing your face and squeezing you because you’re just so cute, I love walking with you, and running with you, working out with you, and dragging you to coffee shops, I love getting freaky with you (in a horror movie way of course), I love watching shows and movies with you, I love staying up with you and talking until I am deliriously sleepy, I love waking up in the morning with your embrace (have I told you your arm/boob is more comfortable than any pillow?) (damn I’ve said boob a lot).`,
+    headline: 'Verilog Systolic Array',
+    subheadline: 'Parallel computation architecture for matrix operations',
+    body: `Implemented a systolic array architecture in Verilog for efficient parallel computation of matrix operations. Optimized for high throughput with minimal memory bandwidth, demonstrating deep understanding of hardware-level parallelism and data flow optimization.`,
     byline: 'By Akshaya Arun',
-    date: 'June 13, 2026',
+    date: 'Portfolio',
     size: 'medium',
   },
   {
     id: 4,
-    image: graduation1,
-    headline: 'More Reasons Why I Love You',
-    subheadline: 'And all the times I fell in love with you again',
-    body: `When we first started dating I was so worried everything would be hard because of the differences in culture, but you have made so much of an effort to learn everything about me. From saying my name right to listening to all the music I listen to. It has made it so much easier for me to share everything with you. I promise I will always do the same for you. I’ve always been a little scared of being my authentic self around people but I love that I can truly be myself around you, and I hope I make you feel the same way.
-
-Every single day I fall in love with you a little more, but here are some honorable mentions- when you added songs I liked to your playlist literally a week into us dating, the day you knocked on my door in Glenn when I texted you I was throwing up, the nights you sat with me as I worked on those cursed scores, the entire weekend we spent in NY last summer, the day we lowkey got in a car accident and you kept me from losing my mind, the day you sat outside the Alchemist with me and consoled me about not having an internship, the day you took me to the ER after I broke my pinky nail. `,
+    headline: 'Operating System Kernel Enhancement',
+    subheadline: 'Threading, memory management, and user privilege levels',
+    body: `Extended an operating system kernel with critical features including multi-threaded execution, user group management, paging mechanisms, and virtual memory support. Implemented context switching, memory page tables, and permission-based access control.`,
     byline: 'By Akshaya Arun',
-    date: 'June 13, 2026',
+    date: 'Portfolio',
     size: 'medium',
   },
   {
     id: 5,
-    image: i_scream,
-    headline: 'Local Man Sets Record for How Much he Makes his Girlfriend Laugh',
-    subheadline: 'Laughter is the best medicine, so you\'re basically a doctor',
-    body: `I feel like  such a big part of our relationship has been all the inside jokes we’ve come up with. I can’t end this card without dedicating a paragraph to just how much I love your humor and how much we’re in sync because of our senses of humor. From the first time we started exchanging Beetlejuice snaps I knew you were it. From that to the Ice Spice jokes, to Pillsbury dough boy, to boon beam ice cream, to doing accents, and introducing you to songs like Jimmy Aaja. I love every single little inside joke we have. `,
+    headline: 'Aerial Vehicle Detection: CPU vs GPU Analysis',
+    subheadline: 'Performance benchmarking on real-world image data',
+    body: `Conducted comprehensive performance benchmarking of state-of-the-art vision detection models (YOLO, SSD, etc.) on aerial vehicle detection. Compared CPU and GPU execution on campus aerial imagery, analyzing throughput, latency, and energy efficiency tradeoffs.`,
     byline: 'By Akshaya Arun',
-    date: 'June 13, 2026',
+    date: 'Portfolio',
     size: 'medium',
   },
+]
+
+export const mlProjects = [
   {
     id: 6,
-    image: i_skate,
-    headline: 'Our Rituals and Traditions',
-    subheadline: 'We\'ve developed some great habits!',
-    body: `I also want to commemorate all the rituals we’ve established over the years. The good night sleep tight, the hugging and kissing like we’re about to go off to war before we leave each other, more recently, the walks to the Mark and Connector so we don’t have to sleep alone, waking up in the morning and immediately trying to wake you up (I can stop if you don’t enjoy this though). I never want to stop doing them. `,
+    headline: 'Physics-Informed Neural Networks (PINNs)',
+    subheadline: 'Cardiac modeling with 75% reduced training data',
+    body: `Implemented Physics-Informed Neural Networks to model cardiac behavior from initial conditions, embedding physical constraints directly into the neural network architecture. Evaluated optimization techniques and achieved 75% reduction in training data requirements and 60% faster training times compared to baseline approaches.`,
     byline: 'By Akshaya Arun',
-    date: 'June 13, 2026',
-    size: 'medium',
+    date: 'Portfolio',
+    size: 'large',
   },
   {
     id: 7,
-    image: graduation_boob,
-    headline: 'The Trajectory of Our Relationship',
-    subheadline: 'Where do you see yourself in 5 years?',
-    body: `The closer we get to living actual lives outside of college the more I realize I only want to live it with you. I really can’t wait to do life with you. I can literally picture us living in our tiny New York apartment. Waking up every morning and kissing your face, having dogs and cats,  seeing the world with you, making chocolate chip banana bread every weekend until we get tired of it, establishing more rituals, and coming up with so many more inside jokes. 
-
-      I feel like a big reason why I am always looking at old photos and texts is because I literally want to remember every moment we’ve spent together, and it feels wrong to forget any of it because every moment has felt so significant, but I’ve come to realize that we’re going to make so many more. 
-
-      I love you so, so much,
-      Akshaya`,
+    headline: 'Financial RAG Chatbot',
+    subheadline: 'Retrieval-augmented generation for financial advice',
+    body: `Developed a Retrieval-Augmented Generation chatbot using the FIQA financial dataset to provide beginner-friendly financial guidance. Implemented hallucination detection by comparing model responses against human financial advisor baselines, ensuring output reliability and accuracy.`,
     byline: 'By Akshaya Arun',
-    date: 'June 13, 2026',
+    date: 'Portfolio',
     size: 'medium',
   },
+  {
+    id: 8,
+    headline: 'EEG to EMG Neural Mapping',
+    subheadline: 'Cross-modal biomedical signal translation',
+    body: `Engineered a neural network to map EEG measurements to EMG activity, enabling non-invasive muscle activity prediction. Applied advanced preprocessing techniques including PCA for dimensionality reduction and CCA for cross-modal data alignment and normalization.`,
+    byline: 'By Akshaya Arun',
+    date: 'Portfolio',
+    size: 'medium',
+  },
+  {
+    id: 9,
+    headline: 'Sustainable Shopping Browser Extension',
+    subheadline: 'Vector embedding-based eco-friendly product recommendations',
+    body: `Designed and deployed a Chrome extension that recommends sustainable product alternatives using vector embeddings. The system compares product embeddings against a vector database of vegan/sustainable items, providing users with environmentally conscious alternatives in real-time.`,
+    byline: 'By Akshaya Arun',
+    date: 'Portfolio',
+    size: 'medium',
+  },
+]
 
+export const agenticProjects = [
+  {
+    id: 10,
+    headline: 'Autonomous Career Search Agent',
+    subheadline: 'End-to-end job matching and application pipeline',
+    body: `Built an autonomous agent that scrapes job postings from target company websites and stores them in a vector database. The orchestration pipeline processes job descriptions, performs semantic matching against portfolio projects, generates tailored resume versions, and delivers personalized opportunities via Slack notifications.`,
+    byline: 'By Akshaya Arun',
+    date: 'Portfolio',
+    size: 'large',
+  },
+  {
+    id: 11,
+    headline: 'Documentation Automation Agent',
+    subheadline: 'LangChain-based technical documentation generation',
+    body: `Developed an intelligent agent using LangChain to automate software documentation generation for engineering teams. The system orchestrates multi-step workflows to extract information from codebases, structure it semantically, and generate comprehensive technical documentation at scale.`,
+    byline: 'By Akshaya Arun',
+    date: 'Portfolio',
+    size: 'medium',
+  },
+]
+
+export const softwareProjects = [
+  {
+    id: 12,
+    headline: 'Soothe Journaling App',
+    subheadline: 'AI-assisted journaling with React and FastAPI',
+    body: `Designed and built a full-stack journaling application combining React frontend with FastAPI backend. Integrated AI-powered features including intelligent writing prompts, mood tracking, mood analytics dashboard, and AI-generated task suggestions from journal entries for enhanced user engagement.`,
+    byline: 'By Akshaya Arun',
+    date: 'Portfolio',
+    size: 'large',
+  },
+  {
+    id: 13,
+    headline: 'Spotify Wrapped Custom Generator',
+    subheadline: 'OAuth-authenticated music analytics dashboard',
+    body: `Built a web application leveraging the Spotify API to generate personalized listening summaries and music analytics. Implemented secure authentication using Spotify's OAuth 2.0 flow, enabling users to visualize detailed listening patterns and music preferences.`,
+    byline: 'By Akshaya Arun',
+    date: 'Portfolio',
+    size: 'medium',
+  },
+  {
+    id: 14,
+    headline: 'Kafka-Based Notification Microservice (UKG)',
+    subheadline: 'Event-driven architecture with MongoDB and Grafana',
+    body: `Architected a Kafka-based microservice on the UKG notifications team to track message delivery latency, success rates, and processing time. Implemented message persistence to MongoDB with Grafana dashboard visualization, reducing defect analysis time and enabling real-time observability of notification pipeline health.`,
+    byline: 'By Akshaya Arun',
+    date: 'Portfolio',
+    size: 'medium',
+  },
+  {
+    id: 15,
+    headline: 'Cloud Engineering Portal (UKG)',
+    subheadline: 'Spotify Backstage-based DevOps platform',
+    body: `Contributed to UKG's cloud engineering portal built on Spotify's Backstage framework. Designed and implemented high-performance web pages serving thousands of concurrent users with sub-second latency. Centralized DevOps tooling and infrastructure management, improving developer experience across the organization.`,
+    byline: 'By Akshaya Arun',
+    date: 'Portfolio',
+    size: 'medium',
+  },
 ]

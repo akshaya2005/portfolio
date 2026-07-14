@@ -1,10 +1,11 @@
 import { NavLink } from 'react-router-dom'
 
 const NAV_ITEMS = [
-  { label: 'Our Story',   to: '/' },
-  { label: 'Wordle',      to: '/wordle' },
-  { label: 'Connections', to: '/connections' },
-  { label: 'Letter Boxed', to: '/letterboxed' },
+  { label: 'Home',               to: '/' },
+  { label: 'Systems',            to: '/systems' },
+  { label: 'Machine Learning',   to: '/machine-learning' },
+  { label: 'Agentic',            to: '/agentic' },
+  { label: 'Software Development', to: '/software-development' },
 ]
 
 export default function Navbar() {

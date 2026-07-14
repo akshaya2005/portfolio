@@ -11,18 +11,17 @@
 
 export default function ArticleCard({
   image, headline, subheadline, body,
-  byline = 'By You', date = '', size = 'medium',
+  byline = 'By You', date = '', size = 'medium', aspectRatio = null,
 }) {
   const isLarge = size === 'large'
+  const imageAspectRatio = aspectRatio || (isLarge ? 'aspect-[16/9]' : 'aspect-[4/3]')
 
   return (
     <article className={`flex flex-col gap-3 ${isLarge ? 'md:col-span-2' : ''}`}>
      
 
       {/* Section label slot */}
-      <div className="rule-thin pt-2">
-        <span className="section-label">❤ Our Memories</span>
-      </div>
+  
 
       {/* Headline */}
       <h2 className={`font-display font-bold leading-tight ${isLarge ? 'text-4xl' : 'text-2xl'}`}>
@@ -50,7 +49,7 @@ export default function ArticleCard({
       )}
        {/* Photo */}
       {image && (
-        <div className={`overflow-hidden bg-rule/20 ${isLarge ? 'aspect-[16/9]' : 'aspect-[4/3]'}`}>
+        <div className={`overflow-hidden bg-rule/20 ${imageAspectRatio}`}>
           <img
             src={image}
             alt={headline}
