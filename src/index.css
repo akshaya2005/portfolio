@@ -2,22 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: 'Old English Text MT';
-  src: url('/fonts/oldenglishtextmt.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Cheltenham';
-  src: url('/fonts/cheltenham-normal-200.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
 @layer base {
   body {
     @apply bg-paper text-ink font-body;
