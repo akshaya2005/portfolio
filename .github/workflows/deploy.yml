@@ -16,6 +16,8 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  environment:
+    name: github-pages
   build:
     runs-on: ubuntu-latest
     steps:
